@@ -19,7 +19,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};
@@ -54,7 +54,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};
@@ -86,7 +86,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};
@@ -124,7 +124,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};
@@ -159,7 +159,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};
@@ -194,7 +194,7 @@ option! {
     ///
     /// ```rust
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::{epoch, stats};

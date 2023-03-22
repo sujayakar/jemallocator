@@ -250,6 +250,9 @@ fn main() {
     if env::var("CARGO_FEATURE_PROFILING").is_ok() {
         info!("CARGO_FEATURE_PROFILING set");
         cmd.arg("--enable-prof");
+        if env::var("CARGO_FEATURE_LIBUNWIND").is_ok() {
+            cmd.arg("--enable-prof-libunwind");
+        }
     }
 
     if env::var("CARGO_FEATURE_STATS").is_ok() {

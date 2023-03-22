@@ -1,6 +1,6 @@
 // Work around https://github.com/gnzlbg/jemallocator/issues/19
 #[global_allocator]
-static A: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+static A: jemallocator::Jemalloc = jemallocator::Jemalloc;
 
 #[test]
 fn smoke() {

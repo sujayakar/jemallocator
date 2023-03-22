@@ -4,7 +4,7 @@ use std::mem;
 use std::ptr;
 
 use libc::{c_char, c_void};
-use tikv_jemallocator::Jemalloc;
+use jemallocator::Jemalloc;
 
 #[global_allocator]
 static A: Jemalloc = Jemalloc;

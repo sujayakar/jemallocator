@@ -21,7 +21,7 @@ use std::time::Duration;
 use tikv_jemalloc_ctl::{stats, epoch};
 
 #[global_allocator]
-static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 
 fn main() {
     // Obtain a MIB for the `epoch`, `stats.allocated`, and

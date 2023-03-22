@@ -1,5 +1,5 @@
 [package]
-name = "tikv-jemallocator"
+name = "jemallocator"
 # Make sure to update the version in the README as well:
 version = "0.5.0"
 authors = [
@@ -43,7 +43,7 @@ tikv-jemalloc-ctl = { path = "../jemalloc-ctl", version = "0.5.0" }
 [features]
 default = ["background_threads_runtime_support"]
 alloc_trait = []
-profiling = ["tikv-jemalloc-sys/profiling"]
+profiling = ["tikv-jemalloc-sys/profiling", "tikv-jemalloc-sys/libunwind"]
 debug = ["tikv-jemalloc-sys/debug"]
 stats = ["tikv-jemalloc-sys/stats"]
 background_threads_runtime_support = ["tikv-jemalloc-sys/background_threads_runtime_support"]

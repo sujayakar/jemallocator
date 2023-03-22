@@ -24,7 +24,7 @@
 //! use tikv_jemalloc_ctl::{stats, epoch};
 //!
 //! #[global_allocator]
-//! static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+//! static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 //!
 //! fn main() {
 //!     loop {
@@ -47,7 +47,7 @@
 //! use tikv_jemalloc_ctl::{stats, epoch};
 //!
 //! #[global_allocator]
-//! static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+//! static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 //!
 //! fn main() {
 //!     let e = epoch::mib().unwrap();
@@ -72,7 +72,7 @@
 
 #[cfg(test)]
 #[global_allocator]
-static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 
 use crate::std::{fmt, mem, num, ops, ptr, result, slice, str};
 #[cfg(not(feature = "use_std"))]
@@ -107,7 +107,7 @@ option! {
     ///
     /// ```
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// use tikv_jemalloc_ctl::version;
@@ -131,7 +131,7 @@ option! {
     ///
     /// ```
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// # #[cfg(not(target_os = "macos"))] {
@@ -161,7 +161,7 @@ option! {
     ///
     /// ```
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// # #[cfg(not(target_os = "macos"))] {
@@ -193,7 +193,7 @@ option! {
     ///
     /// ```
     /// # #[global_allocator]
-    /// # static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+    /// # static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
     /// #
     /// # fn main() {
     /// #
